@@ -1,10 +1,11 @@
-function StudentCard() {
+import React from 'react';
+
+function StudentCard(probs) {
     return (
         <div>
-            <h3>Name: Dena Alharbi</h3>
-            <p>ID: 202250560</p>
-            <p>Department: Software Engineering</p>
-
+            <h3>Name: {props.name}</h3>
+            <p>Student ID: {props.id}</p>
+            <p>Department: {props.dept}</p>
         </div>
     );
 }
